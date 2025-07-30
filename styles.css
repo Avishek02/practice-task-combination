@@ -50,7 +50,12 @@ body {
 
 /* Header  */
 header {
-    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    /* background: linear-gradient(90deg, #8e2de2, #4a00e0); */
+    background: linear-gradient(45deg, #3498db 25%, #9b59b6 75%);
+    /* background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite; */
+
+
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -76,7 +81,9 @@ header {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-left: 10px solid #4a00e0;
+    /* border-left: 10px solid #4a00e0; */
+    border-left: 10px solid transparent;
+    border-image: linear-gradient(to top, #3498db 25%, #9b59b6 75%) 2;
     transition: transform 0.5s, box-shadow 0.3s, background-color 0.4s;
 }
 
@@ -179,8 +186,11 @@ header {
 /* Buttons styles  */
 .button {
     display: inline-block;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    transition: background 0.3s;
+    /* background: linear-gradient(90deg, #00c6ff, #0072ff); */
+    background: linear-gradient(45deg, #3498db 25%, #9b59b6 75%);
+    transition: transform 0.5s ease;
+    transition: background-position 0.5s ease;
+
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -191,10 +201,15 @@ header {
     font-family: "Roboto", serif;
     font-weight: 500;
     font-size: 1rem;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 .button:hover {
-    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    /* background: linear-gradient(90deg, #0072ff, #00c6ff); */
+    background: linear-gradient(45deg, #9b59b6 25%, #3498db 75%);
+
+    /* transform: scale(1.05); */
+    /* background-position: 100% 0; */
 }
 
 
@@ -233,6 +248,23 @@ header {
     margin-top: -1rem;
     color: #333;
     transition: color 0.3s ease;
+}
+
+
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
