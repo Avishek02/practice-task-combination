@@ -1,0 +1,239 @@
+/* Universal styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+
+/* Shared Styles  */
+/* Fonts */
+.font-roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.font-playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.font-roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Header  */
+header {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px 20px;
+    margin: auto;
+}
+
+
+/* Card Styling */
+.task {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-left: 10px solid #4a00e0;
+    transition: transform 0.5s, box-shadow 0.3s, background-color 0.4s;
+}
+
+.task:hover {
+    transform: translateY(-10px);
+    /* Lifting effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    background-color: #ffe4e1;
+    /* background: linear-gradient(45deg, #ff7e5f, #feb47b); */
+
+}
+
+.task1-img-container {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    /* width: fit-content; */
+}
+
+.task img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+
+.task h2 {
+    background: linear-gradient(90deg, #f953c6, #b91d73);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.task p {
+    font-size: 1.05em;
+    color: #333;
+}
+
+
+
+.inputs {
+    width: fit-content;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.inputs input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 165px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+/* Result styles  */
+.result {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* Lottie animations  */
+#lottie-check-container {
+    width: 5rem;
+    height: 5rem;
+    margin-left: -1.5rem;
+    position: relative;
+}
+
+.task4-Animation {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.task4-Animation.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Buttons styles  */
+.button {
+    display: inline-block;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: background 0.3s;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+}
+
+
+#calculatorAnimation {
+    width: 5rem;
+    height: 5rem;
+}
+
+#remainderAnimation,
+#calculatorAnimation,
+#animeBouncingFruits {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 0.5rem;
+    position: absolute;
+}
+
+
+#task4-subtitle{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.task4-input-container {
+    align-items: center;
+    margin-top: 0;
+}
+
+.task4-input {
+    height: 50%;
+}
+
+#task4-result {
+    margin-top: -1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+
+/* Responsive  */
+@media (max-width: 600px) {
+    .inputs input {
+        width: 100%;
+    }
+
+
+
+
+}

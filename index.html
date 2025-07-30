@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milestone 03 Module 01 Tasks</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  
+  <!-- Include Lottie library -->
+  <script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
+  <script src="lottie_scripts.js"></script>
+  <script src="scripts.js"></script>
+
+
+</head>
+
+<body>
+
+  <header>
+    <h1 class="main-headline font-roboto-slab">Module 13 Tasks Lists</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Create a container for the animation -->
+
+    <!-- Task 1 -->
+    <div class="task">
+      <h2 class="font-roboto-slab">Task 1: Fruit Shopping Return</h2>
+      <div class="task1-img-container">
+        <img src="assets/apple_landscape.jpg" alt="apple" />
+        <img src="assets/orange_landscape.jpg" alt="orange" />
+      </div>
+      <div class="inputs">
+        <input type="number" placeholder="Your Taka" />
+        <input type="number" placeholder="Cost of Apple/kg" />
+        <input type="number" placeholder="Cost of Orange/kg" />
+      </div>
+
+      <div id="task1-result" class="result"></div>
+
+      <button class="button" id="btn-task1" onclick="calculateChange()">Get The Change</button>
+
+      <div class="task1-anime" id="animeBouncingFruits"></div>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="task">
+      <h2 class="font-roboto-slab">Task 2: Average Marks Calculator</h2>
+      <div class="inputs">
+        <input type="number" placeholder="Math" id="math" />
+        <input type="number" placeholder="Biology" id="biology" />
+        <input type="number" placeholder="Chemistry" id="chemistry" />
+        <input type="number" placeholder="Physics" id="physics" />
+        <input type="number" placeholder="Bangla" id="bangla" />
+      </div>
+
+      <div id="task2-result" class="result"></div>
+      <button class="button" id="btn-task2" onclick="calculateAverage()">Calculate Avg Marks</button>
+      <div class="anime-task2" id="calculatorAnimation"></div>
+    </div>
+
+
+    <!-- Task 3 -->
+    <div class="task">
+      <h2 class="font-roboto-slab">Task 3: Divide by 5 – Show Remainder</h2>
+      <div class="inputs">
+        <input type="number" placeholder="Enter a number" id="inputRemainder" />
+      </div>
+
+      <div id="task3-result" class="result"></div>
+      <button class="button" onclick="showRemainder()">Find Remainder</button>
+      <div id="remainderAnimation"></div>
+    </div>
+
+    <!-- Task 4 -->
+    <div class="task">
+      <h2 class="font-roboto-slab">Task 4: JavaScript isNaN Check</h2>
+      <p id="task4-subtitle">
+        Enter a value, and we will check whether it is a valid number using <code>isNaN()</code>:
+      </p>
+
+      <div class="inputs task4-input-container">
+        <input class="task4-input" type="text" id="inputField" placeholder="Enter a value" autocomplete="off" />
+
+        <div id="lottie-check-container">
+          <div class="task4-Animation" id="animeCheckmark"></div>
+          <div class="task4-Animation" id="animeRedCross"></div>
+        </div>
+      </div>
+      <div id="task4-result" class="result"></div>
+      <button class="button btn-task4" onclick="checkIfNumber()">Check if Number</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
