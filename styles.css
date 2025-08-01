@@ -266,11 +266,11 @@ header {
 
     /* Shared styles */
     .container {
-        padding: 2.5rem 0.5rem;
+        padding: 2.5rem 0.75rem;
     }
 
     .task {
-        /* border: none; */
+        border-left: 10px solid transparent;
     }
 
     .task .task-title {
@@ -280,6 +280,7 @@ header {
     .inputs input {
         width: 100%;
     }
+
     /* - - - - - -End of Shared styles- - - - - */
 
 
@@ -301,7 +302,7 @@ header {
 
 
     /* Task4 Section styles  */
-    #task4InputField{
+    #task4InputField {
         width: 70%;
     }
 
