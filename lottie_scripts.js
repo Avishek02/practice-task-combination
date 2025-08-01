@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'anime_lottie/calculator.json' 
+        path: 'anime_lottie/calculate.json' 
     });
 
     window.lottieAnimations.remainder = lottie.loadAnimation({
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'anime_lottie/math.json' 
+        path: 'anime_lottie/calculator.json' 
     });
 });
 
