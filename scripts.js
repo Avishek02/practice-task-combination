@@ -71,7 +71,7 @@ function showRemainder() {
 
 // Task 4
 document.addEventListener('DOMContentLoaded', () => {
-    const inputField = document.getElementById('inputField');
+    const inputField = document.getElementById('task4InputField');
     const resultDiv = document.getElementById('task4-result');
 
     inputField.addEventListener('input', () => {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function checkIfNumber() {
-    const input = document.getElementById('inputField').value.trim();
+    const input = document.getElementById('task4InputField').value.trim();
     const resultDiv = document.getElementById('task4-result');
     const checkmark = document.getElementById('animeCheckmark');
     const redcross = document.getElementById('animeRedCross');

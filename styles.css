@@ -13,7 +13,7 @@ body {
 }
 
 
-/* Shared Styles  */
+/* - - - - - - - - Shared Styles- - - - - - - - */
 /* Fonts */
 .font-roboto-slab {
     font-family: "Roboto Slab", serif;
@@ -22,14 +22,12 @@ body {
     font-style: normal;
 }
 
-
 .font-dancing-script {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
-
 
 .font-roboto {
     font-family: "Roboto", sans-serif;
@@ -39,7 +37,6 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
-
 .font-merriweather {
     font-family: "Merriweather", serif;
     font-optical-sizing: auto;
@@ -47,6 +44,8 @@ body {
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
+
+
 
 /* Header  */
 header {
@@ -65,7 +64,7 @@ header {
 }
 
 
-
+/* Main container of the webpage  */
 .container {
     display: flex;
     flex-direction: column;
@@ -96,22 +95,7 @@ header {
 
 }
 
-.task1-img-container {
-    display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    /* width: fit-content; */
-}
-
-.task img {
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-
-.task h2 {
+.task .task-title {
     background: linear-gradient(90deg, #f953c6, #b91d73);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -125,9 +109,9 @@ header {
 }
 
 
-
+/* user input styles  */
 .inputs {
-    width: fit-content;
+    width: 100%;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -138,12 +122,11 @@ header {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 165px;
+    width: fit-content;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1rem;
 }
-
 
 /* Result styles  */
 .result {
@@ -152,12 +135,90 @@ header {
     font-style: italic;
     font-size: 1rem;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 
+/* Buttons styles  */
+.button {
+    display: inline-block;
+    /* background: linear-gradient(90deg, #00c6ff, #0072ff); */
+    background: linear-gradient(45deg, #3498db 25%, #9b59b6 75%);
+    transition: transform 0.5s ease;
+    transition: background-position 0.5s ease;
+
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 1rem 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    /* animation: gradientAnimation 10s ease infinite; */
+    width: fit-content;
+}
+
+.button:hover {
+    /* background: linear-gradient(90deg, #0072ff, #00c6ff); */
+    background: linear-gradient(45deg, #9b59b6 25%, #3498db 75%);
+
+    /* transform: scale(1.05); */
+    /* background-position: 100% 0; */
+}
 
 
-/* Lottie animations  */
+/* Lottie animation common styles  */
+#remainderAnimation,
+#calculatorAnimation,
+#animeBouncingFruits {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 0.5rem;
+    position: absolute;
+}
+
+/* - - - - - - End of Shared styles  - - - - - - - - -*/
+
+
+
+/* Task01 Section styles  */
+.task1-img-container {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    /* width: fit-content; */
+}
+
+.task1-img-container img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+
+/* Task04 Section styles  */
+#task4-subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#task4-input-container {
+    align-items: center;
+    margin-top: 0;
+}
+
+
+#task4-result {
+    margin-top: -1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
 #lottie-check-container {
     width: 5rem;
     height: 5rem;
@@ -183,74 +244,6 @@ header {
 }
 
 
-/* Buttons styles  */
-.button {
-    display: inline-block;
-    /* background: linear-gradient(90deg, #00c6ff, #0072ff); */
-    background: linear-gradient(45deg, #3498db 25%, #9b59b6 75%);
-    transition: transform 0.5s ease;
-    transition: background-position 0.5s ease;
-
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 1rem;
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-size: 1rem;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-.button:hover {
-    /* background: linear-gradient(90deg, #0072ff, #00c6ff); */
-    background: linear-gradient(45deg, #9b59b6 25%, #3498db 75%);
-
-    /* transform: scale(1.05); */
-    /* background-position: 100% 0; */
-}
-
-
-#calculatorAnimation {
-    width: 5rem;
-    height: 5rem;
-}
-
-#remainderAnimation,
-#calculatorAnimation,
-#animeBouncingFruits {
-    display: inline-block;
-    width: 5rem;
-    height: 5rem;
-    margin-left: 0.5rem;
-    position: absolute;
-}
-
-
-#task4-subtitle {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-.task4-input-container {
-    align-items: center;
-    margin-top: 0;
-}
-
-.task4-input {
-    height: 50%;
-}
-
-#task4-result {
-    margin-top: -1rem;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-
 
 
 @keyframes gradientAnimation {
@@ -269,12 +262,47 @@ header {
 
 
 /* Responsive  */
-@media (max-width: 600px) {
+@media screen and (max-width: 570px) {
+
+    /* Shared styles */
+    .container {
+        padding: 2.5rem 0.5rem;
+    }
+
+    .task {
+        border: none;
+    }
+
+    .task .task-title {
+        font-size: 1.5rem;
+    }
+
     .inputs input {
+        width: 100%;
+    }
+    /* - - - - - -End of Shared styles- - - - - */
+
+
+
+    header {
+        font-size: 1rem;
+    }
+
+
+    /* Task1 Section styles  */
+    .task1-img-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .task1-img-container img {
         width: 100%;
     }
 
 
-
+    /* Task4 Section styles  */
+    #task4InputField{
+        width: 70%;
+    }
 
 }

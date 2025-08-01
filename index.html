@@ -34,7 +34,7 @@
 
     <!-- Task 1 -->
     <div class="task">
-      <h2 class="font-roboto-slab">Task 1: Fruit Shopping Return</h2>
+      <h2 class="task-title font-roboto-slab">Task 1: Fruit Shopping Return</h2>
       <div class="task1-img-container">
         <img src="assets/apple_landscape.jpg" alt="apple" />
         <img src="assets/orange_landscape.jpg" alt="orange" />
@@ -56,7 +56,7 @@
 
     <!-- Task 2 -->
     <div class="task">
-      <h2 class="font-roboto-slab">Task 2: Average Marks Calculator</h2>
+      <h2 class="task-title font-roboto-slab">Task 2: Average Marks Calculator</h2>
       <div class="inputs">
         <input type="number" placeholder="Math" id="math" />
         <input type="number" placeholder="Biology" id="biology" />
@@ -75,7 +75,7 @@
 
     <!-- Task 3 -->
     <div class="task">
-      <h2 class="font-roboto-slab">Task 3: Divide by 5 – Show Remainder</h2>
+      <h2 class="task-title font-roboto-slab">Task 3: Divide by 5 - Show Remainder</h2>
       <div class="inputs">
         <input type="number" placeholder="Enter a number" id="inputRemainder" />
       </div>
@@ -90,18 +90,19 @@
     
     <!-- Task 4 -->
     <div class="task">
-      <h2 class="font-roboto-slab">Task 4: JavaScript isNaN Check</h2>
-      <p id="task4-subtitle">
+      <h2 class="font-roboto-slab task-title">Task 4: JavaScript isNaN Check</h2>
+      <p id="task4-subtitle" style= "display: none;">
         Enter a value, and we will check whether it is a valid number using <code>isNaN()</code>:
       </p>
 
-      <div class="inputs task4-input-container">
-        <input class="task4-input" type="text" id="inputField" placeholder="Enter a value" autocomplete="off" />
+      <div class="inputs" id="task4-input-container">
+        <input type="text" id="task4InputField" placeholder="Enter a value" autocomplete="off" />
 
         <div id="lottie-check-container">
           <div class="task4-Animation" id="animeCheckmark"></div>
           <div class="task4-Animation" id="animeRedCross"></div>
         </div>
+        
       </div>
       <div id="task4-result" class="result"></div>
       <button class="button btn-task4" onclick="checkIfNumber()">Check if Number</button>
