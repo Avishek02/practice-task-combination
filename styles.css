@@ -270,7 +270,7 @@ header {
     }
 
     .task {
-        border-left: 10px solid transparent;
+        border-left: 5px solid transparent;
     }
 
     .task .task-title {
