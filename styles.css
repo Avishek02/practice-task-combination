@@ -80,7 +80,7 @@ header {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    /* border-left: 10px solid #4a00e0; */
+    /* border-left: 10px solid #4a00e0;  */
     border-left: 10px solid transparent;
     border-image: linear-gradient(to top, #3498db 25%, #9b59b6 75%) 2;
     transition: transform 0.5s, box-shadow 0.3s, background-color 0.4s;
@@ -280,8 +280,9 @@ header {
         border-left: 5px solid transparent;
     }
 
-    .task .banner-img{
+    .task .banner-img {
         width: 100%;
+        height: auto;
     }
 
     .task .task-title {
@@ -309,6 +310,7 @@ header {
 
     .task1-img-container img {
         width: 100%;
+        height: auto;
     }
 
 
