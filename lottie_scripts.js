@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'anime_lottie/calculate.json' 
+        path: 'anime_lottie/calculator.json' 
     });
 
     window.lottieAnimations.remainder = lottie.loadAnimation({
