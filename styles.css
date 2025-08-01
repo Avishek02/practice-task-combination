@@ -276,12 +276,15 @@ header {
     }
 
     .task {
-        border-left: 5px solid transparent;
+        /* border-left: 5px solid transparent; */
+        border: none;
     }
 
     .task .banner-img {
         width: 100%;
         height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
         margin-bottom: 1rem;
         margin-right: -30px;
         margin-left: -30px;
