@@ -270,7 +270,7 @@ header {
     }
 
     .task {
-        border: none;
+        /* border: none; */
     }
 
     .task .task-title {
