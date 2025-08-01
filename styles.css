@@ -95,6 +95,13 @@ header {
 
 }
 
+.task .banner-img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
 .task .task-title {
     background: linear-gradient(90deg, #f953c6, #b91d73);
     -webkit-background-clip: text;
