@@ -9,13 +9,12 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    /*
-    background-color: #f5f7fa;
-    background-color: #fdfcfa; /* A very light, creamy off-white 
-    background-color: #f0f5f9; /* A very light, airy blue 
-    background-color: #f6f2f9; /* A very light and soft lilac */
     
-    background-color: #fff5f7; /* A very subtle, soft pink */
+    background-color: #f5f7fa;
+    background-color: #fdfcfa; /* A very light, creamy off-white */
+    /*background-color: #f0f5f9;  A very light, airy blue */
+    /*background-color: #f6f2f9; A very light and soft lilac*/
+    /*background-color: #fff5f7;  A very subtle, soft pink */
 }
 
 
